@@ -1,4 +1,4 @@
-# CSS
+# Triangle ShadowDOM Demo
 
 ``npm install``
 
