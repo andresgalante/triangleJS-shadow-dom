@@ -3,16 +3,14 @@
 body{
   font-family: sans-serif;
 }
-/*
-p{
-  border: 2px solid orange;
-}*/
 
-/*my-component{
-  background: tan;
-  --bg-color: yellow;
+
+
+my-component{
+  /*background: tan;*/
+  /*--bg-color: yellow;
   --pink-theme: {
       color: #6A8759;
-      background-color: #F64778;
-  }
-}*/
+      border: 4px solid #F64778;
+  }*/
+}

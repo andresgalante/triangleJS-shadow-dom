@@ -1,8 +1,8 @@
 body{
   background: url("../img/wood-background.jpg") no-repeat center center;
   background-size: cover;
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -17,5 +17,5 @@ body {
 }
 
 access-badge{
-  /*--pf-label: "Wizard of the castle";*/
+  --pf-label: "Wizard of the castle";
 }

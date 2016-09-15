@@ -10,28 +10,48 @@ customElements.define('my-component', class extends HTMLElement {
     let shadowRoot = this.attachShadow({mode: 'open'});
     shadowRoot.innerHTML = `
       <style>
-        :host {
-          display: block;
-          background: orange;
-          padding: 4em;
-        }
-        :host(.blue) {
-          background: blue;
-        }
-        :host([dissabled]) {
-          background: grey;
-        }
-        :host-context(.darktheme) {
-          background: black;
-        }
-        p, ::slotted(p){
-          background: var(--bg-color, red);
-          @apply --pink-theme;
-        }
+
+        /* The :host :host(<selector>) selector
+          =========================================== */
+        // :host {
+        //   display: block;
+        //   background: tan;
+        //   padding: 4em;
+        // }
+        //
+        // :host(.blue) {
+        //   background: blue;
+        // }
+        //
+        // :host([dissabled]) {
+        //   background: grey;
+        // }
+
+        /* The ::host-context(<selector>) selector
+           =========================================== */
+        // :host-context(.darktheme) {
+        //   background: black;
+        //   color: white;
+        // }
+
+        /* The :slotted(<compound-selector>) selector
+           =========================================== */
+        // ::slotted(p){
+        //   color: blue;
+        // }
+
+        /* CSS variables and mixins
+           =========================================== */
+        // p, ::slotted(p){
+        //   background: var(--bg-color, red);
+        //   @apply --pink-theme;
+        // }
+
+        p { color: red }
+
       </style>
-      <slot name="slot">
-        <p>Hello! I am a placeholder!</p>
-      </slot>
+
+      <p>Hello! here</p>
 
     `;
   }
